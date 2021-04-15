@@ -1,0 +1,70 @@
+.statistics {
+  padding-top: 0.5rem;
+  margin: auto;
+  max-width: 70rem;
+}
+
+.statistics h1 {
+  font-size: 2.5rem;
+}
+  
+.statistics .text-content {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.statistics .text-content img {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.number-stat .number {
+  text-align: center;
+  font-size: 6rem;
+}
+
+.number-stat .text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.number-stat {
+  text-align: center;
+}
+
+
+@media (min-width: 45rem) {
+  .statistics .text-content {
+    grid-template-columns: repeat(2, auto); 
+  }
+
+  .number-stat {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+    max-width: 50rem;
+    margin: auto;
+  }
+  .number-stat .number {
+    width: 10rem;
+    text-align: right;
+    font-size: 6rem;
+    margin-right: 2rem;
+  }
+
+  .number-stat .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-grow: 1;
+    text-align: left;
+    font-size: 1.5rem;
+  }
+}

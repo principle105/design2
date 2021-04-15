@@ -1,0 +1,14 @@
+.results-page {
+  padding-top: 0.5rem;
+  margin: auto;
+  max-width: 70rem;
+}
+
+.results-page h1 {
+  font-size: 2.5rem;
+}
+
+.results-page h3 {
+  padding: 15px;
+  font-size: 1.5rem;
+}

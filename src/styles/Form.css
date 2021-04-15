@@ -1,0 +1,141 @@
+.options .option {
+  height: 4rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  animation: transitionIn 0.6s;
+  color: black;
+}
+
+.options .option:not(.selected):hover {
+  background-color: #d4d4d4
+}
+
+.options .option:not(.selected) {
+  background-color: #fff;
+}
+
+.selected {
+  background-color: rgb(143, 255, 152);
+}
+
+.question .options {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: grid;
+  grid-gap: 1rem;
+  max-width: 50rem;
+  margin: auto;
+}
+
+.question .action-btns .next-question {
+  background-color: palegreen;
+}
+
+.question .action-btns .last-question {
+  background-color: lightcoral;
+  margin-right: 0.7rem;
+}
+.question .action-btns {
+  display: flex;
+  justify-content: center;
+}
+
+.question .action-btns button {
+  padding: 1rem;
+  height: 3rem;
+  font-size: 1.2rem;
+}
+
+.question .question-amt {
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.question .question-head {
+  color: #fff;
+  text-align: center;
+}
+
+.question .question-head .question-title {
+  padding-top: 10px;
+  font-size: 1.5rem;
+}
+
+.question .question-head .question-description {
+  font-size: 1rem;
+  padding-top: 4px;
+}
+
+.results .result-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.results .result-header h1 {
+  padding-top: 10px;
+}
+
+.results .result-header .result-btn {
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.results .result-header .result-btn:not(:last-child) {
+  margin-right: 1rem;
+}
+.results .result-header .result-btn:not(.result-selected):hover {
+  background-color: #d4d4d4
+}
+.result-selected {
+  background-color: rgb(185, 255, 191);
+}
+
+
+.results .result-section {
+  text-align: center;
+  color: #fff;
+}
+
+.results .result-section .restart {
+  color: #fff;
+  margin-top: 15px;
+  padding: 0.5rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  background-color: rgb(247, 107, 107);
+  width: 100%;
+  max-width: 10rem;
+}
+
+.results .result-section .restart:hover {
+  background-color: lightcoral;
+}
+
+@media (min-width: 45rem) {
+  .question .options {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  .results .result-header {
+    flex-direction: row;
+  }
+  .results .result-header .result-btn {
+    max-width: 18rem;
+  }
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}

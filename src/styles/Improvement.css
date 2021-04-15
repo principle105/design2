@@ -1,0 +1,57 @@
+.improvement {
+  padding-top: 0.5rem;
+  margin: auto;
+  max-width: 70rem;
+}
+
+.improvement h1 {
+  font-size: 2.5rem;
+}
+
+.improvement h3 {
+  padding: 15px;
+  font-size: 1.5rem;
+}
+ 
+.improvement-content {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-rows: auto;
+}
+
+.improvement-block {
+  font-size: 1.1rem;
+  padding: 2rem;
+  background-color: rgb(0,157,119);
+  border-radius: 10px;
+  animation: transitionIn 0.3s;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+}
+
+.improvement-block img {
+  max-width: 12rem;
+}
+
+@media (min-width: 60rem) {
+  .improvement-content {
+    grid-template-columns: repeat(2, auto); 
+  }
+  .improvement-block img {
+    max-width: 15rem;
+    height: auto;
+  }
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-100deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
