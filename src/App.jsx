@@ -36,7 +36,7 @@ export default function App() {
               {/* 404 Page */}
               <Route component={() => <Suspense fallback={renderLoader()}><PageNotFound /></Suspense>} path="*" />
             </Switch>
-            <Footer />
+            {/* <Footer /> */}
           </div>
         </AnimatePresence>
       </div>
