@@ -39,6 +39,7 @@
 
 .answer-container .highlight {
   color: red;
+  text-decoration: underline;
 }
 
 @keyframes transitionIn {
