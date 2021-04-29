@@ -50,9 +50,9 @@ const formData = [
     description: "(250 miles / 400 km)",
     images: "https://cdn4.iconfinder.com/data/icons/eco-bio-and-zero-waste-1/128/Artboard_20-512.png",
     options: {
-      "0-20%": [1,"Buying food in bulk can help reduce the amount of packaging and save money. A lot of grocery stores allow you to bring your own containers. "],
-      "20-40%": [2,"Buying food in bulk can help reduce the amount of packaging and save money. A lot of grocery stores allow you to bring your own containers. "],
-      "40-60%": [3,"Buying food in bulk can help reduce the amount of packaging and save money. A lot of grocery stores allow you to bring your own containers. "],
+      "0-20%": [1,"Buying food in bulk can help reduce the amount of packaging and save money. A lot of grocery stores allow you to bring your own containers."],
+      "20-40%": [2,"Buying food in bulk can help reduce the amount of packaging and save money. A lot of grocery stores allow you to bring your own containers."],
+      "40-60%": [3,"Buying food in bulk can help reduce the amount of packaging and save money. A lot of grocery stores allow you to bring your own containers."],
       "60%+": [4,""]
     }
   },

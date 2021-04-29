@@ -12,12 +12,15 @@ const Improvement = ({chosenQuestions}) => {
         <div className="improvement-content">
           {
             chosenQuestions.map((a,i) => {
-              return (
-                <div className="improvement-block" key={i}> 
-                  <img src={a.image} alt="sustainability"/>
-                  <p>- {a.advice}</p>
-                </div>
-              )
+              if (a.advice) {
+                return (
+                  <div className="improvement-block" key={i}> 
+                    <img src={a.image} alt="sustainability"/>
+                    <p>- {a.advice}</p>
+                  </div>
+                )
+              }
+              return null
             })
           }
         </div>

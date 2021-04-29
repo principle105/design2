@@ -6,7 +6,7 @@ import "./styles/main.css"
 
 // Importing components
 import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 
 // Importing Pages
 const HomePage = lazy(() => import("./pages/HomePage"));

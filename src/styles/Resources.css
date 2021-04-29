@@ -27,6 +27,9 @@
   color: #fff;
 }
 
+.card:hover {
+  background-color: rgb(1, 172, 129);
+}
 
 .card-image-wrapper {
   display: flex;
@@ -46,9 +49,10 @@
 
 .card-content h3 {
   font-size: 1rem;
+  display: none;
 }
 
-@media (max-width: 65rem) {
+@media (max-width: 900px) {
   .cards {
     grid-template-columns: repeat(2, auto); 
   }
@@ -57,7 +61,7 @@
   }
 }
 
-@media (max-width: 45rem) {
+@media (max-width: 650px) {
   .cards {
     grid-template-columns: repeat(1, auto); 
   }

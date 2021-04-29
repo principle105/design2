@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import formData from "../formData"
 import "../styles/Form.css";
 
-import Feedback from "../components/results/Feedback";
+import Information from "../components/results/Information";
 import Improvement from "../components/results/Improvement";
 import Results from "../components/results/Results";
 import Statistics from "../components/results/Statistics";
@@ -19,14 +19,16 @@ const Form = () => {
   const nextQuestion = () => {
     const questionData = formData[questionNumber];
     const questionOption = questionData["options"][selectedAnswer]
-    if (questionOption[1]) {
-      setChosenQuestions(a => [...a, {
 
-        points: questionOption[0],
-        image: questionData["images"],
-        advice: questionOption[1]
-      }]);
-    }
+    setChosenQuestions(a => [...a, {
+      title: questionData["title"],
+      description: questionData["description"],
+      points: questionOption[0],
+      image: questionData["images"],
+      advice: questionOption[1],
+      selected: selectedAnswer
+    }]);
+    
     setQuestionNumber(questionNumber + 1);
     setSelectedAnswer("")
   }
@@ -56,13 +58,13 @@ const Form = () => {
                   <button id="results" onClick={nextResult} className={`result-btn${(resultPage === "results") ? " result-selected": ""}`}>Results</button>
                   <button id="statistics" onClick={nextResult} className={`result-btn${(resultPage === "statistics") ? " result-selected": ""}`}>Statistics</button>
                   <button id="improvement" onClick={nextResult} className={`result-btn${(resultPage === "improvement") ? " result-selected": ""}`}>Improvement</button>
-                  <button id="feedback" onClick={nextResult} className={`result-btn${(resultPage === "feedback") ? " result-selected": ""}`}>Feedback</button>
+                  <button id="information" onClick={nextResult} className={`result-btn${(resultPage === "information") ? " result-selected": ""}`}>Information</button>
                 </div>
                 <div className="result-section">
                   {
                     <>
-                      {(resultPage === "feedback") ? (
-                        <Feedback 
+                      {(resultPage === "information") ? (
+                        <Information 
                           
                         />
                       ) : (resultPage === "improvement") ? (

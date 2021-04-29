@@ -15,9 +15,11 @@
 
 .statistics .text-content img {
   display: block;
-  width: 100%;
+  width: 15rem;
+  /* max-width: 100%; */
   margin-left: auto;
   margin-right: auto;
+  height: auto;
 }
 
 .number-stat .number {
@@ -37,7 +39,7 @@
 }
 
 
-@media (min-width: 45rem) {
+@media (min-width: 900px) {
   .statistics .text-content {
     grid-template-columns: repeat(2, auto); 
   }
@@ -66,5 +68,9 @@
     flex-grow: 1;
     text-align: left;
     font-size: 1.5rem;
+  }
+
+  .statistics .text-content img {
+    width: 20rem;
   }
 }

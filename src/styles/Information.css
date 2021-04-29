@@ -1,0 +1,47 @@
+.information {
+  padding-top: 0.5rem;
+  margin: auto;
+  max-width: 70rem;
+}
+
+.information .info-content {
+  margin: 2rem 0rem;
+}
+
+.information h1 {
+  font-size: 2.3rem;
+  margin-bottom: 0.7rem;
+}
+
+.information p {
+  font-size: 1.3rem;
+}
+
+.information .info-container {
+  display: flex;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  margin-bottom: 3rem;;
+}
+
+.info-container img {
+  /* display: block; */
+  max-width: 15rem;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.information .content-container {
+  text-align: left;
+  margin-left: 3rem;
+}
+
+@media (max-width: 900px) {
+  .information .info-container {
+    flex-direction: column;
+  }
+  .info-container img {
+    margin-bottom: 2rem;
+  }
+}

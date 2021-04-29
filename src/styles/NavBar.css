@@ -50,7 +50,7 @@ label {
   display: none;
 }
 
-@media (max-width: 45rem) {
+@media (max-width: 750px) {
   .navbar ul {
     display: none;
   }
