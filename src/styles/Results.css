@@ -35,7 +35,6 @@
 
 .answer-container .answer-content {
   margin:0 auto;
-  max-width: 70%;
 }
 
 .answer-container .highlight {
@@ -60,10 +59,14 @@
   }
 }
 
+
 @media (min-width: 700px) {
   .answer-container img {
     max-width: 12rem;
     margin-left: 1rem;
     display: block;
+  }
+  .answer-container .answer-content {
+    max-width: 70%;
   }
 }

@@ -34,7 +34,7 @@ const Form = () => {
   }
 
   const lastQuestion = () => {
-    setChosenQuestions(chosenQuestions.filter(item => formData[questionNumber]["images"] !== item.image));
+    setChosenQuestions(chosenQuestions.filter(item => formData[questionNumber-1]["images"] !== item.image));
     setQuestionNumber(questionNumber - 1);
     setSelectedAnswer("")
   }
@@ -76,9 +76,7 @@ const Form = () => {
                           chosenQuestions={chosenQuestions}
                         />
                       ) : (
-                        <Statistics 
-                          
-                        />
+                        <Statistics />
                       )}
                     </>
                   }
