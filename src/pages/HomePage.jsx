@@ -10,7 +10,9 @@ const HomePage = () => {
         <div className="content">
           <div className="info">
             <h2>Sustainability and Consumption</h2>
-            <p>"The Sustainable Development Goals are the blueprint to achieve a better and more sustainable future for all"</p>
+            <p>
+              "The Sustainable Development Goals are the blueprint to achieve a better and more sustainable future for all" - United Nations
+            </p>
             <NavLink to="/form" className="info-btn">Start Improving</NavLink>
           </div>
         </div>
