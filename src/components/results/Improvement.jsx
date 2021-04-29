@@ -11,6 +11,7 @@ const Improvement = ({chosenQuestions}) => {
       ) : (
         <div className="improvement-content">
           {
+            // Loops through questions and displays advice
             chosenQuestions.map((a,i) => {
               if (a.advice) {
                 return (

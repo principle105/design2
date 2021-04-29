@@ -16,6 +16,7 @@ const NavBar = () => {
 
   return (
     <div>
+      {/* Invisible checkbox for toggling the mobile nav bar */}
       <input type="checkbox" id="check" checked={checked} onChange={() => onCheck()}/>
       <div className="navbar">
         <h2><NavLink to="/" className="logo">Design Project</NavLink></h2>
@@ -37,6 +38,7 @@ const NavBar = () => {
               </NavLink>
             </li>
         </ul>
+        {/* Checks the invisible check box to toggle mobile nav bar */}
         <label htmlFor="check">
           <i className="fas fa-bars menu-btn"></i>
           <i className="fas fa-times close-btn"></i>
